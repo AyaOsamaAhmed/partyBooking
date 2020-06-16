@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/first_name"
+    android:layout_margin="@dimen/_10sdp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:orientation="vertical"
+    >
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_amount_provide"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_customer_pay"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="22,000"
+            android:background="@color/colorAccent"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_13sdp"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:text="S.R"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_13sdp"
+            />
+    </LinearLayout>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_commission"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/colorGrey2"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/check"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_customer_service"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/colorGrey2"
+            android:textSize="@dimen/_13sdp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/check"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_manage_reservation"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/colorGrey2"
+            android:textSize="@dimen/_13sdp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/check"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_market_name"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/colorGrey2"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/button_login"
+        android:text="@string/register_next"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

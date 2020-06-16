@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notification_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listitem="@layout/comment_user_item_fragment"
+        tools:listitem="@layout/comment_user_item_fragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/no_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_notification"
+        android:layout_marginTop="@dimen/_150sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_notification"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no_notification"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

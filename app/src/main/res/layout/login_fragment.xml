@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/Rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+<androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/party"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/PartyBooking"
+    android:layout_marginTop="130dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_welcome"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/party"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_150sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_google"
+            style="@style/MyButton"
+            android:drawableStart="@drawable/google"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            app:icon="@drawable/facebook"
+            app:iconGravity="start"
+            android:text="@string/login_google" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_facebook"
+            style="@style/MyButton"
+            android:drawableStart="@drawable/facebook"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:text="@string/login_facebook" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_as_user"
+            style="@style/MyButton"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="@string/login_as_user"  />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_as_provider"
+            style="@style/MyButton"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="@string/login_as_service_provider"  />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

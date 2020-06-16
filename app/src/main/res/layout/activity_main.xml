@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_bg"
+            android:elevation="0dp"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include layout="@layout/home_action_bar" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_bar_layout"
+            app:navGraph="@navigation/main_nav_graph" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/home_bottom_nav_bar"
+            style="@style/BottomBar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/bottom_nav_bg"
+            android:theme="@style/BottomBar"
+            app:itemBackground="@drawable/home_tab_selector"
+            app:itemTextColor="@color/color_white"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu_provider" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

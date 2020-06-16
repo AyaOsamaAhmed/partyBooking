@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/first_name"
+    android:layout_margin="@dimen/_10sdp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:orientation="vertical"
+    >
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_important_information"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_reservation_confirm"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/colorGrey2"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_confirm_answer"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_choose_reservation"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/colorGrey2"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_reservation_answer"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_receive_reservation"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/colorGrey2"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_best_calendar"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/check_information_real"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_information_real"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/_10sdp">
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/check_read_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_read_agree"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/_13sdp"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_and_conditions"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+</LinearLayout>
+</LinearLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/done"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/button_login"
+        android:text="@string/register_done"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/not_ready"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/not_ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_not_done"
+        android:textColor="@color/colorGrey2"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@id/done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

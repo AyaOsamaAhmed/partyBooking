@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+   android:layout_width="match_parent"
+    android:layout_height="@dimen/_130sdp"
+    android:background="@color/color_white"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/comment_image"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        tools:src="@drawable/profile_image_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/comment_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+<com.google.android.material.textview.MaterialTextView
+    android:id="@+id/user_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:text="Aya Osama"
+    android:textSize="@dimen/_13sdp"
+    android:textColor="@color/colorPrimaryDark"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    />
+     <androidx.appcompat.widget.AppCompatImageView
+         android:id="@+id/location_icon"
+         android:layout_width="@dimen/_20sdp"
+         android:layout_height="@dimen/_20sdp"
+         android:layout_marginTop="@dimen/_10sdp"
+         android:src="@drawable/pin"
+         app:layout_constraintTop_toBottomOf="@id/user_name"
+         app:layout_constraintStart_toStartOf="parent"
+         />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="جميع المناطق بالسعوديه"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="normal"
+        app:layout_constraintTop_toTopOf="@id/location_icon"
+        app:layout_constraintStart_toEndOf="@id/location_icon"
+        />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/rate_icon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="3.5"
+            android:textSize="@dimen/_10sdp"
+            android:background="@drawable/bachground_fill_primary"
+            app:layout_constraintTop_toBottomOf="@id/location_icon"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="جيد"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="normal"
+            app:layout_constraintTop_toTopOf="@id/rate_icon"
+            app:layout_constraintStart_toEndOf="@id/rate_icon"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/favorite_icon"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@drawable/heart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+         >
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/estimated_amount"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="end"
+            android:textSize="@dimen/_10sdp"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15,000 S.R"
+            android:textColor="@color/colorPrimary"
+            android:gravity="end|left"
+            android:textSize="@dimen/_10sdp"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/taxes_fees"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="end"
+            android:textSize="@dimen/_10sdp"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
