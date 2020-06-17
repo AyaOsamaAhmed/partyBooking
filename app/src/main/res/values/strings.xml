@@ -74,4 +74,27 @@
     <string name="or">Or</string>
     <string name="first_registration">First time registration</string>
     <string name="no_notification">No Have Notifications</string>
+    <string name="log_in">Log in</string>
+    <string name="email_or_mobile_number">Email or mobile number</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login_user">If you are a previous user, enter your data to be recognized</string>
+    <string name="send">Send</string>
+    <string name="name">Name</string>
+    <string name="complaint_title">Complaint Title</string>
+    <string name="language">Language</string>
+    <string name="arabic_lang">Arabic Language</string>
+    <string name="English_lang">English Language</string>
+    <string name="current_reservations">Current reservations</string>
+    <string name="ended_reservations">Ended reservations</string>
+    <string name="confirmation_number">Confirmation number</string>
+    <string name="transfer_invoice">Transfer invoice</string>
+    <string name="download">Download</string>
+    <string name="my_reservations">My reservations</string>
+    <string name="confirm_reservation">Congratulations, the reservation has been confirmed</string>
+    <string name="done_reservation">Booked</string>
+    <string name="location">Location</string>
+    <string name="party_type">Party Type</string>
+    <string name="most_popular">Most popular</string>
+    <string name="choose">Choose</string>
 </resources>

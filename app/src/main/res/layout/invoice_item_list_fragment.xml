@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey3"
+    >
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmation_number"
+        android:text="@string/confirmation_number"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_18sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmation_number_text"
+        android:text="198928929292"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@id/confirmation_number"
+        app:layout_constraintTop_toBottomOf="@id/confirmation_number"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/transfer_invoice"
+        android:text="@string/transfer_invoice"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/confirmation_number"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/transfer_invoice_button"
+        android:text="@string/download"
+        android:textSize="@dimen/_18sdp"
+        android:padding="@dimen/_3sdp"
+        android:background="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/transfer_invoice"
+        app:layout_constraintTop_toTopOf="@id/confirmation_number_text"
+        app:layout_constraintTop_toBottomOf="@id/transfer_invoice"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

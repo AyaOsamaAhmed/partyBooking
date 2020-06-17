@@ -13,7 +13,7 @@
     <string name="register_first_name">الاسم الاول</string>
     <string name="register_family_name">اسم العائلة</string>
     <string name="register_mail">عنوان البريد الالكترونى</string>
-    <string name="register_phone_number">رقم الهاتف المحمول</string>
+    <string name="register_phone_number">رقم الجوال</string>
     <string name="register_country">الدولة</string>
     <string name="register_regions_support">"المناطق التى تدعمها "</string>
     <string name="register_type_service_support">"نوع الخدمه التى تدعمها "</string>
@@ -75,4 +75,27 @@
     <string name="or">او</string>
     <string name="already_account">هل لديك حساب بالفعل</string>
     <string name="no_notification">لا يوجد اشعارات</string>
+    <string name="log_in">سجل دخولك</string>
+    <string name="email_or_mobile_number">البريد الالكترونى او رقم الجوال</string>
+    <string name="password">الباسورد</string>
+    <string name="sign_in">دخول</string>
+    <string name="login_user">اذا كنت مستخدم سابق ادخل بياناتك ليتم التعرف عليك</string>
+    <string name="send">ارسال</string>
+    <string name="name">الاسم</string>
+    <string name="complaint_title">عنوان الشكوى</string>
+    <string name="language">اللغة</string>
+    <string name="arabic_lang">"اللغه العربية "</string>
+    <string name="English_lang">اللغه الانجليزية</string>
+    <string name="download">تحميل</string>
+    <string name="transfer_invoice">فاتوره التحويل</string>
+    <string name="confirmation_number">رقم تاكيد الحجز</string>
+    <string name="ended_reservations">الحجوزات المنتهيه</string>
+    <string name="current_reservations">الحجوزات الحالية</string>
+    <string name="my_reservations">حجوزاتى</string>
+    <string name="confirm_reservation">تهانينا تم تاكيد الحجز</string>
+    <string name="done_reservation">تم الحجز</string>
+    <string name="location">الموقع</string>
+    <string name="party_type">نوع الحفل</string>
+    <string name="most_popular">الاكثر رواجا</string>
+    <string name="choose">اختيار</string>
 </resources>

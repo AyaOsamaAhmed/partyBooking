@@ -44,7 +44,7 @@
         android:text="@string/edit_profile"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="@dimen/_20sdp"
-        android:background="@drawable/border_round_primary"
+        android:background="@drawable/border_round_primary_dark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_name"

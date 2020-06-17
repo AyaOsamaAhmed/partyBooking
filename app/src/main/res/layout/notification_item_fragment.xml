@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey3"
+    >
+
+    <LinearLayout
+        android:id="@+id/notification"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:padding="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:background="@drawable/bachground_fill_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/notificaton_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="تم تاكيد الحجز!"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/user_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Aya Osama"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="normal"
+        />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
