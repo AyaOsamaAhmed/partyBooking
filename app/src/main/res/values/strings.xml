@@ -97,4 +97,8 @@
     <string name="party_type">Party Type</string>
     <string name="most_popular">Most popular</string>
     <string name="choose">Choose</string>
+    <string name="calm">The calm</string>
+    <string name="enabled">Enabled</string>
+    <string name="calm_details">When the Do Not Disturb feature is enabled, alerts received during quiet hours will be silent</string>
+    <string name="say_something">say something ........</string>
 </resources>

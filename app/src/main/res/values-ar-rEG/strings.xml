@@ -98,4 +98,8 @@
     <string name="party_type">نوع الحفل</string>
     <string name="most_popular">الاكثر رواجا</string>
     <string name="choose">اختيار</string>
+    <string name="calm">الهدوء</string>
+    <string name="enabled">مفعل</string>
+    <string name="calm_details">عند تفعيل خاصيه عدم الازعاج فان التنبيهات التى تصلك خلال ساعات الهدوء ستكون صامته</string>
+    <string name="say_something">قل شيئا .....</string>
 </resources>

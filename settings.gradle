@@ -1,2 +1,2 @@
 rootProject.name='PartyBooking'
-include ':app'
+include ':app', ':libbambuser-0.9.21'
