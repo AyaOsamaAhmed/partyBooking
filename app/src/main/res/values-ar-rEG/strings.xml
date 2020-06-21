@@ -102,4 +102,14 @@
     <string name="enabled">مفعل</string>
     <string name="calm_details">عند تفعيل خاصيه عدم الازعاج فان التنبيهات التى تصلك خلال ساعات الهدوء ستكون صامته</string>
     <string name="say_something">قل شيئا .....</string>
+    <string name="look_reservations">ابحث عن الحجوزات</string>
+    <string name="city">المدينة :</string>
+    <string name="customer_name">"اسم العميل : "</string>
+    <string name="canceled_reservation">حجز ملغى</string>
+    <string name="confirmed_reservation">حجز مؤكد</string>
+    <string name="multiple_dates">اضغط على عده تواريخ لتعديلها دفعه واحده</string>
+    <string name="decide_modify">حدد ما ترغب بتعديله</string>
+    <string name="price_changed_date">تغير السعر فى هذا التاريخ</string>
+    <string name="reservation_closed_date">اغلاق الحجز فى هذا التاريخ</string>
+    <string name="availability_reservation_date">اتاحه الحجز فى هذا التاريخ</string>
 </resources>

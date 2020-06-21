@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    >
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp"
+        android:background="@color/colorGreen2"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alart_selected_date"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/coloryellow2"
+        android:text="@string/multiple_dates"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/_13sdp"
+        android:gravity="right"
+        app:layout_constraintTop_toBottomOf="@id/calendarView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/close_grey"
+        android:id="@+id/close_alart"
+        app:layout_constraintTop_toTopOf="@id/alart_selected_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/alart_selected_date"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/decide_modify"
+        android:id="@+id/decide_modify"
+        android:textColor="@color/colorGrey2"
+        android:textSize="@dimen/_12sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="right"
+        app:layout_constraintTop_toBottomOf="@id/alart_selected_date"
+        />
+   <com.google.android.material.button.MaterialButton
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_40sdp"
+       android:id="@+id/availability_reservation_date"
+       android:background="@drawable/button_primary"
+       android:layout_margin="@dimen/_10sdp"
+       android:text="@string/availability_reservation_date"
+       app:layout_constraintTop_toBottomOf="@id/decide_modify"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/reservation_closed_date"
+        android:background="@drawable/button_primary"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="@string/reservation_closed_date"
+        app:layout_constraintTop_toBottomOf="@id/availability_reservation_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/price_changed_date"
+        android:background="@drawable/button_primary"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="@string/price_changed_date"
+        app:layout_constraintTop_toBottomOf="@id/reservation_closed_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

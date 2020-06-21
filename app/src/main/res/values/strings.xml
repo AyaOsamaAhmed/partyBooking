@@ -101,4 +101,14 @@
     <string name="enabled">Enabled</string>
     <string name="calm_details">When the Do Not Disturb feature is enabled, alerts received during quiet hours will be silent</string>
     <string name="say_something">say something ........</string>
+    <string name="look_reservations">Look for reservations</string>
+    <string name="confirmed_reservation">Confirmed Reservation</string>
+    <string name="canceled_reservation">Canceled reservation</string>
+    <string name="customer_name">"customer name : "</string>
+    <string name="city">"City : "</string>
+    <string name="multiple_dates">Click on multiple dates to edit it in one go</string>
+    <string name="decide_modify">Decide what you want to modify</string>
+    <string name="availability_reservation_date">Availability of reservation on this date</string>
+    <string name="reservation_closed_date">Reservation closed on this date</string>
+    <string name="price_changed_date">The price has changed on this date</string>
 </resources>
